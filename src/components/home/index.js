@@ -68,7 +68,7 @@ export default function Home(props) {
           animate={show ? 'visible' : 'hidden'}
           variants={variants}
         >
-          {headlines.map((headline) => <img className="w-full h-auto" src={`../../images/${headline}.png`} alt={headline} key={headline} />)}
+          {headlines.map((headline) => <img className="w-full h-auto" src={`../../../images/${headline}.png`} alt={headline} key={headline} />)}
           <NavLink to="/intro">
             <div className="w-full h-auto bg-primary text-white text-7xl uppercase text-center p-10">
               Let&apos;s learn more...
