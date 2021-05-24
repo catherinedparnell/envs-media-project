@@ -1,0 +1,42 @@
+// // animations
+// .plastic {
+//     border-radius: 20px;
+//     margin: auto;
+//     height: 2vh;
+//     width: 2vh;
+//     background-image: linear-gradient(to bottom, #ff9999, #ff5b5b),
+//       linear-gradient(to bottom, #e5b1ff, #e5b1ff);
+// }
+  
+// graph styling
+.tick line{
+    visibility:hidden;
+}
+
+// home animations
+.wave{
+    background-clip: text;
+    -webkit-background-clip: (text);
+    color:rgba(0,0,0,0);
+    text-shadow:0px 0px rgba(255,255,255,0.06);
+    animation:wave-animation 4s infinite linear, loading-animation 10s infinite linear alternate;
+    background-size:200px 150px;
+    background-repeat:repeat-x;
+    opacity:1;
+ }
+
+ @keyframes wave-animation{
+    0%{background-position:0 bottom};
+    100%{background-position:200px bottom};
+  }
+  @keyframes loading-animation{
+    0%{background-size:200px 0px};
+    100%{background-size:200px 200px};
+  }
+
+  .background-plastic {
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    transform: translateX(-50%);
+  }
