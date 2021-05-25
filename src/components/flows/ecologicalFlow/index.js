@@ -6,12 +6,19 @@ import Graph from '../../lib/transitionBarGraph';
 import plasticPollutionData from '../../../data/plasticPollution.json';
 import NavigationPage from '../../lib/navigationPage';
 
-export default function EcologicalFlow(props) {
-  const colors = ['#A6D6A4', '#F3CF87', '#C99F9F', '#65729E', '#A3ACD7', '#DDC997', '#7CB0A9', '#9F88C4'];
+import Text from './constants';
+
+export default function EcologicalFlow() {
   return (
-    <div className="bg-primary text-white h-screen">
-      This is the ecological flow page.
-      <Graph yAxisLabel="Estimated weight of macroplastics in tons" data={plasticPollutionData.weight} id="impact-parts-graph" colors={colors} initialHeight={350} initialWidth={1000} initialMargin={60} />
+    <div>
+      <div className="bg-yellow text-dark h-screen">
+        <div className="py-40">
+          <div className="absolute z-50 h-screen w-screen flex-col">
+            <div className="font-sans uppercase text-5xl">{Text.graphTitle}</div>
+            <Graph data={plasticPollutionData.weight} id="impact-parts-graph" initialHeight={350} initialWidth={1000} initialMargin={60} />
+          </div>
+        </div>
+      </div>
       <NavigationPage />
     </div>
   );

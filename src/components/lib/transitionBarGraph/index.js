@@ -3,19 +3,20 @@ import * as d3 from 'd3';
 
 // for graph margin styling
 export const Margins = {
-  TOP_MARGIN: 100,
-  LEFT_MARGIN: 100,
-  RIGHT_MARGIN: 100,
+  TOP_MARGIN: 20,
+  LEFT_MARGIN: 160,
+  RIGHT_MARGIN: 160,
+  BOTTOM_MARGIN: 30,
 };
 
 export default function Graph(props) {
   const {
-    id, data, initialHeight, initialWidth,
+    id, data, initialHeight, initialWidth, human,
   } = props;
 
   // set the dimensions and margins of the graph
   const margin = {
-    top: Margins.TOP_MARGIN, right: Margins.RIGHT_MARGIN, bottom: 20, left: Margins.LEFT_MARGIN,
+    top: Margins.TOP_MARGIN, right: Margins.RIGHT_MARGIN, bottom: Margins.BOTTOM_MARGIN, left: Margins.LEFT_MARGIN,
   };
   const width = initialWidth - margin.left - margin.right;
   const height = initialHeight - margin.top - margin.bottom;
@@ -32,14 +33,6 @@ export default function Graph(props) {
       .attr('transform',
         `translate(${margin.left},${margin.top})`);
 
-    // svg.append('text')
-    //   .attr('text-anchor', 'end')
-    //   .attr('transform', 'rotate(-90)')
-    //   .attr('y', -margin.left + 40)
-    //   .attr('x', -margin.top + 60)
-    //   .attr('font-family', '"Poppins", sans-serif')
-    //   .text(yAxisLabel);
-
     // Add X axis
     const x = d3.scaleBand()
       .range([0, width])
@@ -51,8 +44,7 @@ export default function Graph(props) {
       .call(d3.axisBottom(x));
 
     // Y axis
-    const maxY = data.reduce((accumulator, d) => Math.max(accumulator, d.value + (d.value * d.error || 0)), 0);
-    const maxRange = Math.ceil(1.25 * (maxY / 100)) * 100;
+    const maxRange = human ? 500 : 2500;
 
     const y = d3.scaleLinear()
       .range([height, 0])
@@ -80,7 +72,7 @@ export default function Graph(props) {
       .attr('x', (d) => { return x(d.label); })
       .attr('y', (d) => { return y(d.value); })
       .attr('width', x.bandwidth())
-      .attr('fill', '#FFFFFF')
+      .attr('fill', '#F25F5C')
       .attr('height', (d) => { return y(0) - y(d.value); });
 
     u
@@ -91,7 +83,7 @@ export default function Graph(props) {
       .data(data)
       .enter()
       .append('path')
-      .style('stroke', '#737b7d')
+      .style('stroke', '#F25F5C')
       .style('fill', 'none');
 
     svg.selectAll('myRect')
@@ -105,7 +97,7 @@ export default function Graph(props) {
       .style('text-anchor', 'middle')
       .attr('font-family', 'Cabin Condensed')
       .attr('font-size', '14px')
-      .style('fill', '#4E5473');
+      .style('fill', '#F25F5C');
   }, []);
 
   return (

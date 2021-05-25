@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-export default function Home(props) {
+export default function Home() {
   const [left, setLeft] = useState(null);
   const [top, setTop] = useState(null);
   const [none, setNone] = useState(true);
@@ -43,7 +43,7 @@ export default function Home(props) {
   };
 
   return (
-    <div className="bg-black text-white flex h-screen relative">
+    <div className="bg-dark text-offwhite flex h-screen relative">
       <motion.div
         className="flex-col w-1/2 self-end m-3 mb-36"
         initial="hidden"
@@ -51,7 +51,7 @@ export default function Home(props) {
         variants={variants}
       >
         <div className="font-sans uppercase text-7xl">
-          Governments are imposing legislation to reduce plastic in
+          Governments are imposing legislation to reduce <span className="text-red">plastic</span> in
         </div>
         <div className="font-sans uppercase text-9xl bg-wave-pattern wave">
           our oceans.
@@ -60,7 +60,7 @@ export default function Home(props) {
       <motion.div initial="hidden"
         animate="visible"
         variants={variants}
-        className={none ? 'hidden' : 'absolute h-10 w-10 rounded-full bg-white'}
+        className={none ? 'hidden' : 'absolute h-10 w-10 rounded-full bg-yellow'}
         style={{ left, top }}
       />
       <div className="flex-col w-1/2 overflow-y-scroll">
@@ -70,7 +70,7 @@ export default function Home(props) {
         >
           {headlines.map((headline) => <img className="w-full h-auto" src={`../../../images/${headline}.png`} alt={headline} key={headline} />)}
           <NavLink to="/intro">
-            <div className="w-full h-auto bg-primary text-white text-7xl uppercase text-center p-10">
+            <div className="w-full h-auto bg-blue text-offwhite text-7xl uppercase text-center p-10">
               Let&apos;s learn more...
             </div>
           </NavLink>

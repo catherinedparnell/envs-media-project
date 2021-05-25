@@ -14,7 +14,19 @@ module.exports = {
     }),
     backgroundColor: (theme) => ({
       ...theme('colors'),
-      primary: '#4AA9CC',
+      blue: '#4AA9CC',
+      dark: '#435058',
+      yellow: '#FAF8D4',
+      red: '#F25F5C',
+      offwhite: '#FFFFFC',
+    }),
+    textColor: (theme) => ({
+      ...theme('colors'),
+      blue: '#4AA9CC',
+      dark: '#435058',
+      yellow: '#FAF8D4',
+      red: '#F25F5C',
+      offwhite: '#FFFFFC',
     }),
   },
   variants: {
