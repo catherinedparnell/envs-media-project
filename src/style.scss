@@ -40,3 +40,14 @@
     top: -20%;
     transform: translateX(-50%);
   }
+
+  .container {
+    box-shadow: 2px 2px 1px #435058;
+  }
+
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

@@ -8,8 +8,6 @@ export default function Home() {
   const [none, setNone] = useState(true);
   const [show, setShow] = useState(false);
 
-  const headlines = ['headline-1', 'headline-2', 'headline-3', 'headline-4', 'headline-5', 'headline-6', 'headline-7', 'headline-8', 'headline-9'];
-
   function onMouseMove(e) {
     if (!show) {
       setNone(false);
@@ -42,40 +40,31 @@ export default function Home() {
     hidden: { opacity: 0 },
   };
 
+  console.log(window.screen.width, window.screen.height);
+
   return (
-    <div className="bg-dark text-offwhite flex h-screen relative">
-      <motion.div
-        className="flex-col w-1/2 self-end m-3 mb-36"
-        initial="hidden"
-        animate="visible"
-        variants={variants}
-      >
-        <div className="font-sans uppercase text-7xl">
-          Governments are imposing legislation to reduce <span className="text-red">plastic</span> in
-        </div>
-        <div className="font-sans uppercase text-9xl bg-wave-pattern wave">
-          our oceans.
-        </div>
-      </motion.div>
-      <motion.div initial="hidden"
-        animate="visible"
-        variants={variants}
-        className={none ? 'hidden' : 'absolute h-10 w-10 rounded-full bg-yellow'}
-        style={{ left, top }}
-      />
-      <div className="flex-col w-1/2 overflow-y-scroll">
-        <motion.div initial="hidden"
-          animate={show ? 'visible' : 'hidden'}
+    <NavLink to="/intro">
+      <div className="bg-dark text-offwhite flex h-screen relative">
+        <motion.div
+          className="flex-col w-1/2 self-end m-3 mb-36"
+          initial="hidden"
+          animate="visible"
           variants={variants}
         >
-          {headlines.map((headline) => <img className="w-full h-auto" src={`../../../images/${headline}.png`} alt={headline} key={headline} />)}
-          <NavLink to="/intro">
-            <div className="w-full h-auto bg-blue text-offwhite text-7xl uppercase text-center p-10">
-              Let&apos;s learn more...
-            </div>
-          </NavLink>
+          <div className="font-sans uppercase text-7xl">
+            Governments are imposing legislation to reduce <span className="text-red">plastic</span> in
+          </div>
+          <div className="font-sans uppercase text-9xl bg-wave-pattern wave">
+            our oceans.
+          </div>
         </motion.div>
+        <motion.div initial="hidden"
+          animate="visible"
+          variants={variants}
+          className={none ? 'hidden' : 'absolute h-10 w-10 rounded-full bg-yellow'}
+          style={{ left, top }}
+        />
       </div>
-    </div>
+    </NavLink>
   );
 }
