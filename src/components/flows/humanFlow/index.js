@@ -1,10 +1,11 @@
 /* eslint-disable max-len */
-import React from 'react';
+import React, { useState } from 'react';
 
 import NavigationPage from '../../lib/navigationPage';
 import Vector from '../../lib/vectors';
 import BarChart from '../../lib/barChart';
 import LottieAnimation from '../../lib/lottieAnimation';
+import AnimatedPlastics from '../../lib/animatedPlastics';
 
 import Text from './constants';
 import Data from './data';
@@ -12,6 +13,8 @@ import Human from './animations/human.json';
 import Fish from './animations/fish.json';
 
 export default function HumanFlow() {
+  const [started, setStarted] = useState(false);
+
   return (
     <div>
       <div className="bg-yellow text-dark h-screen">
@@ -28,8 +31,9 @@ export default function HumanFlow() {
           {Text.intro.map((text) => <div className="font-sans uppercase text-5xl py-60">{text}</div>)}
         </div>
       </div>
-      <div className="bg-dark text-offwhite flex justify-center">
-        <LottieAnimation animationData={Fish} />
+      <div className="bg-dark text-offwhite flex justify-center h-screen">
+        <AnimatedPlastics setStarted={setStarted} start={started} />
+        <LottieAnimation animationData={Fish} stop={!started} />
         <div className="font-sans uppercase text-5xl py-60 w-1/2">{Text.eat}</div>
       </div>
       <div className="bg-blue text-offwhite flex justify-center">
