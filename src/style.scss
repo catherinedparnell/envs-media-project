@@ -1,12 +1,16 @@
-// // animations
-// .plastic {
-//     border-radius: 20px;
-//     margin: auto;
-//     height: 2vh;
-//     width: 2vh;
-//     background-image: linear-gradient(to bottom, #ff9999, #ff5b5b),
-//       linear-gradient(to bottom, #e5b1ff, #e5b1ff);
-// }
+// animations
+.plastic {
+    border-radius: 20px;
+    // margin: auto;
+    height: .75vh;
+    width: .75vh;
+    // background-image: linear-gradient(to bottom, #ff9999, #ff5b5b),
+    //   linear-gradient(to bottom, #e5b1ff, #e5b1ff);
+
+  background: #CFE6ED;
+  box-sizing: border-box;
+
+}
   
 // graph styling
 .tick line{
@@ -52,8 +56,17 @@
     background-size: cover;
   }
 
+  // flag home page
   .flag {
     background-image: url('../images/flag-water.png');
+
+    .container {
+      transition: 0.3s;
+    }
+    .container:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
   }
 
   // toggle
@@ -75,6 +88,24 @@
 .handle {
   width: 40px;
   height: 40px;
-  background-color: white;
+  background-color: #fffffc;
   border-radius: 40px;
 }
+
+// nav bar
+.nav {
+  div:hover {
+    background-color: #fffffc;
+    color:#435058;
+  }
+  
+  .navLink:hover {
+    background-color: #F25F5C;
+  }
+  
+  .navLink:hover div {
+    background-color: #fffffc;
+    color:#435058;
+  }
+}
+

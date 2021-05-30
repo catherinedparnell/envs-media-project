@@ -1,29 +1,45 @@
 /* eslint-disable no-plusplus */
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
-const SimpleTranslationExample = (props) => {
-  const { scale } = props;
+const SimpleTranslation = (props) => {
+  const { scale, start, setStarted } = props;
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  const [first, setFirst] = useState(true);
+
+  useEffect(() => {
+    if (inView && first) {
+      controls.start({
+        x: [0, Math.random() * scale * 3],
+        y: [0, Math.random() * scale * 2.5],
+        rotate: 360,
+      });
+      setFirst(false);
+    }
+  }, [controls, inView]);
+
   return (
     <motion.div
-      className="plastic"
-      animate={{
-        x: [0, Math.random() * scale * 100],
-        y: [0, Math.random() * scale, Math.random() * scale * -10, 0],
-        rotate: 360,
-      }}
-      transition={{ duration: 4, ease: 'circOut' }}
+      className="plastic absolute"
+      animate={controls}
+      ref={ref}
+      transition={{ duration: 3, ease: 'circOut' }}
+      onAnimationStart={!start ? () => setStarted(true) : null}
     />
   );
 };
 
 export default function AnimatedPlastics(props) {
-// eslint-disable-next-line prefer-spread
-  const n = Array.apply(null, Array(1000)).map((x, i) => { return i; });
+  const { setStarted, start } = props;
+
+  // eslint-disable-next-line prefer-spread
+  const n = Array.apply(null, Array(500)).map((x, i) => { return i; });
 
   return (
-    <div className="plastic-animation">
-      {n.map((key) => <SimpleTranslationExample key={key} scale={key} />)}
+    <div className="plastic-animation relative">
+      {n.map((key) => <SimpleTranslation key={key} scale={key} start={start} setStarted={setStarted} />)}
     </div>
   );
 }

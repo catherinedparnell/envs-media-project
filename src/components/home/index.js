@@ -6,16 +6,13 @@ export default function Home() {
   const [left, setLeft] = useState(null);
   const [top, setTop] = useState(null);
   const [none, setNone] = useState(true);
-  const [show, setShow] = useState(false);
   const [onNav, setOnNav] = useState(false);
   const [textID, setTextID] = useState(-1);
 
   function onMouseMove(e) {
-    if (!show) {
-      setNone(false);
-      setLeft(e.pageX + 20);
-      setTop(e.pageY - 20);
-    }
+    setNone(false);
+    setLeft(e.pageX + 20);
+    setTop(e.pageY - 20);
   }
 
   function showHeadlines(e) {
@@ -25,8 +22,6 @@ export default function Home() {
         setNone(true);
       }
     });
-    setShow(true);
-    setNone(true);
   }
 
   window.addEventListener('mousemove', onMouseMove);

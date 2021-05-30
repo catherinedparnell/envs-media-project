@@ -1,12 +1,12 @@
 import { useLottie } from 'lottie-react';
 
 const LottieAnimation = (props) => {
-  const { animationData } = props;
+  const { animationData, stop } = props;
 
   const options = {
     animationData,
     loop: true,
-    autoplay: true,
+    autoplay: !stop,
   };
 
   const { View } = useLottie(options);
