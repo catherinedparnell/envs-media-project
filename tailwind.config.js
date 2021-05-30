@@ -15,7 +15,7 @@ module.exports = {
     backgroundColor: (theme) => ({
       ...theme('colors'),
       blue: '#4AA9CC',
-      dark: '#435058',
+      dark: '#455760',
       yellow: '#FAF8D4',
       red: '#F25F5C',
       offwhite: '#FFFFFC',
@@ -23,7 +23,7 @@ module.exports = {
     textColor: (theme) => ({
       ...theme('colors'),
       blue: '#4AA9CC',
-      dark: '#435058',
+      dark: '#455760',
       yellow: '#FAF8D4',
       red: '#F25F5C',
       offwhite: '#FFFFFC',

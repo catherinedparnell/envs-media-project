@@ -9,6 +9,7 @@ import LottieAnimation from '../../lib/lottieAnimation';
 import Text from './constants';
 import Data from './data';
 import Human from './animations/human.json';
+import Fish from './animations/fish.json';
 
 export default function HumanFlow() {
   return (
@@ -28,6 +29,10 @@ export default function HumanFlow() {
         </div>
       </div>
       <div className="bg-dark text-offwhite flex justify-center">
+        <LottieAnimation animationData={Fish} />
+        <div className="font-sans uppercase text-5xl py-60 w-1/2">{Text.eat}</div>
+      </div>
+      <div className="bg-blue text-offwhite flex justify-center">
         <LottieAnimation animationData={Human} />
         <div className="font-sans uppercase text-5xl py-60 w-1/2">{Text.eat}</div>
       </div>
