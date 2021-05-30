@@ -9,7 +9,7 @@ const Text = {
   threat: 'But the long distance is not the only obstacle she faces. Suzie must navigate an ocean terrain full of plastic.',
   graphMacroplastic: 'There are an estimated 2,334 tons of macroplastics in the world&#39s surface oceans.', 
   story: 'Every year, thousands of sea turtles die in U.S. waters due to ocean plastic pollution.',
-  unlucky: 'Suzie is one of the unlucky ones. She has become entangled in plastic debris.', 
+  unlucky: 'Suzie is one of the unlucky ones. She has become entangled in plastic debris.',
   others: 'Many sea turtles encounter the same plight as Suzie, while others die from plastic ingestion, mistaking plastic bags for delicious jellyfish.',
   hatchlings: 'And Suzie’s hatchlings are particularly vulnerable.',
   baby: 'Just one piece of plastic can be enough to kill a baby sea turtle.',
