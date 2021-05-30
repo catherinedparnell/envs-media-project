@@ -6,3 +6,4 @@
 * [Tailwind CSS](https://tailwindcss.com/)
 * [Framer Motion](https://www.framer.com/motion/)
 * [Lottie React](https://github.com/LottieFiles/lottie-react)
+* [React Chart.js](https://www.npmjs.com/package/react-chartjs-2)
