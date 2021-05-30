@@ -2,16 +2,50 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import LineChart from '../../lib/lineChart';
+import Vector from '../../lib/vectors';
 
+import Text from './constants';
 import Data from './data';
 
 export default function CombinedFlow(props) {
   return (
-    <div>
-      This is the combined flow page.
-      <div className="flex w-screen justify-evenly">
-        <LineChart height={500} width={500} data={Data.macroplasticData} />
-        <LineChart height={500} width={500} data={Data.microplasticData} />
+    <div className="text-dark">
+      <div className="bg-yellow relative h-screen w-screen">
+        <div className="text-center text-6xl p-20">{Text.intro}</div>
+        <Vector name="wave-bottom2" className="bottom-0 absolute" />
+        <Vector name="plastics2" className="absolute -bottom-10" />
+      </div>
+      <div className="flex-col w-screen h-screen bg-blue">
+        <div className="flex justify-evenly">
+          <div className="bg-yellow container m-10 h-3/5 p-2 flex-col">
+            <div className="text-center text-m p-2">Future of macroplastics in our oceans</div>
+            <LineChart height={400} width={500} data={Data.macroplasticData} />
+          </div>
+          <div className="bg-yellow container m-10 h-3/5 p-2 flex-col">
+            <div className="text-center text-m p-2">Future of microplastics in our oceans</div>
+            <LineChart height={400} width={500} data={Data.microplasticData} />
+          </div>
+        </div>
+        <div className="text-white text-5xl mx-10 p-5 w-screen h-60 overflow-y-scroll">
+          <div className="p-3">{Text.graph[0]}</div>
+          <div className="ml-10 text-4xl">
+            <div>{Text.graph[1]}</div>
+            <div>{Text.graph[2]}</div>
+            <div>{Text.graph[3]}</div>
+          </div>
+          <div className="mt-20">
+            <div className="p-3">{Text.graphGist[0]}</div>
+            <div className="ml-10 mx-10">{Text.graphGist[1]}</div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-blue relative h-screen w-screen">
+        <div className="text-center text-6xl p-20">{Text.buried}</div>
+        <Vector name="sand-plastics" className="bottom-0 absolute" />
+      </div>
+      <div className="bg-yellow relative h-screen w-screen">
+        <div className="text-center text-6xl p-20">{Text.break}</div>
+        <Vector name="plastics-chart" className="bottom-0 absolute" />
       </div>
       <NavLink to="/explore">Go explore</NavLink>
     </div>

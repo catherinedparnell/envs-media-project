@@ -1,28 +1,51 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 import Vector from '../vectors';
 
 export default function NavigationPage(props) {
   const { introFlow } = props;
+
+  const variants = {
+    visible: { opacity: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0 },
+  };
+
   return (
-    <div className="bg-dark text-offwhite flex-col h-screen min-w-full">
-      {/* <div className="font-sans text-offwhite uppercase text-7xl">
-        {introFlow ? 'So why is' : 'Learn more about how'} <span className="wave bg-wave-pattern">OCEAN PLASTIC POLLUTION</span> {introFlow ? 'such a problem?' : 'is such a problem.'}
-      </div> */}
-      <div className="flex relative w-full justify-evenly">
-        <div className="z-50">
-          <NavLink to="/eco"><Vector name="arrow-left" /></NavLink>
-          <div className="font-sans uppercase text-7xl bg-wave-pattern wave">Marine Life</div>
+    <div className="bg-blue text-offwhite flex-col h-screen w-screen relative">
+      <Vector name="sea-floor" className="absolute bottom-0 right-0" />
+      <Vector name="scuba" className="absolute left-2/4 top-40 z-50" />
+      <div className="flex absolute w-full justify-evenly">
+        <div className="z-25 pt-3">
+          <div className="font-sans uppercase text-5xl">Marine Life</div>
+          <NavLink to="/eco"><Vector name="arrow-left" className="arrow" /></NavLink>
         </div>
-        <Vector name="plastic" className="background-plastic" />
-        <div className="z-50">
-          <NavLink to="/human"><Vector name="arrow-right" /></NavLink>
-          <div className="font-sans uppercase text-7xl bg-wave-pattern wave">People</div>
+        {introFlow ? <div className="bg-yellow container text-dark text-center w-1/4 text-3xl p-8 py-14">Learn more about the impacts on... </div> : null}
+        <div className="z-25 pt-3">
+          <div className="font-sans uppercase text-5xl">People</div>
+          <NavLink to="/human"><Vector name="arrow-right" className="arrow" /></NavLink>
         </div>
       </div>
       {!introFlow
         ? (
-          <NavLink to="/future">Keep going</NavLink>
+          <motion.div initial="hidden"
+            animate="visible"
+            variants={variants}
+          >
+            <NavLink to="/future">
+              <div className="container flex-col bg-offwhite text-dark uppercase w-1/4 text-3xl absolute bottom-0 right-0 m-5 p-10 text-center">
+                Move on
+                <div className="scroll-prompt" scroll-prompt="" ng-show="showPrompt" style={{ opacity: 1 }}>
+                  <div className="scroll-prompt-arrow-container">
+                    <div className="scroll-prompt-arrow"><div /></div>
+                    <div className="scroll-prompt-arrow"><div /></div>
+                  </div>
+                </div>
+
+              </div>
+            </NavLink>
+          </motion.div>
         )
         : null}
     </div>

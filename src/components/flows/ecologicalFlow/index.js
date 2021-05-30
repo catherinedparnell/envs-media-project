@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import BarChart from '../../lib/barChart';
 import NavigationPage from '../../lib/navigationPage';
@@ -12,16 +13,13 @@ import Vector from '../../lib/vectors';
 import Data from './data';
 
 export default function EcologicalFlow() {
+  const variants = {
+    visible: { opacity: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0 },
+  };
+
   return (
     <div>
-      <div className="bg-offwhite text-dark h-screen">
-        <div className="py-40">
-          <div className="absolute z-50 h-screen w-screen flex-col">
-            <div className="font-sans uppercase text-5xl">{Text.graphTitle}</div>
-            <BarChart data={Data} width={500} height={500} />
-          </div>
-        </div>
-      </div>
       {/* h-screen overflow-y-scroll */}
       <div className="relative bg-dark text-offwhite">
         <div className="w-screen h-screen flex-col relative">
@@ -38,6 +36,24 @@ export default function EcologicalFlow() {
           <div className="font-sans uppercase text-5xl">{Text.threat}</div>
           <div className="absolute bottom-0 right-0 z-50 h-screen w-screen overflow-hidden">
             <LottieAnimation animationData={Suzie} />
+          </div>
+        </div>
+        <div className="bg-yellow text-dark h-screen">
+          <div className="h-screen w-screen flex">
+            <motion.div
+              className="self-start m-10 w-1/2"
+              initial="hidden"
+              animate="visible"
+              variants={variants}
+            >
+              <div className="font-sans text-blue uppercase text-7xl">
+                There are an estimated<div className="text-8xl text-red">2,334 tons</div> of macroplastics in the world&apos;s surface oceans.
+              </div>
+            </motion.div>
+            <div className="bg-offwhite container m-10 p-10 w-1/2">
+              <div className="font-sans text-2xl w-3/4 py-5">{Text.graphTitle}</div>
+              <BarChart data={Data} width={500} height={500} />
+            </div>
           </div>
         </div>
         <div className="w-screen h-screen flex relative">

@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 const Text = {
   intro: 'What does the future of plastic pollution look like for our surface oceans?',
-  graph: ['These graphs display the mass of micro- and macroplastics in the world\'s surface oceans under 3 possible scenarios:',
+  graph: ['These graphs display 3 possible scenarios:',
     '1. If we had stopped all plastic outputs to our oceans by 2020 (this ship has sailed)',
     '2. If plastic outputs to our oceans level out after 2020',
     '3. If plastic outputs continue to grow to 2050, matching historic growth rates',
@@ -11,8 +11,8 @@ const Text = {
   ],
   buried: 'Plastics buried in the sand will resurface, contributing to persistent macroplastics.',
   break: 'Existing large plastics will continue to break down into smaller and smaller pieces, creating more microplastics.',
-  time: ['We still have time to prevent the steep upward trajectory of scenario 3 and manage this problem.',
-    'BUT THAT MEANS LIMITING OUR OCEAN PLASTIC POLLUTION NOW.',
+  time: 'We still have time to prevent the steep upward trajectory of scenario 3 and manage this problem.',
+  now: 'BUT THAT MEANS LIMITING OUR OCEAN PLASTIC POLLUTION NOW.',
   end: 'Continue on to learn more.',
 };
 

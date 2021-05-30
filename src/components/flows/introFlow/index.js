@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 
@@ -5,6 +6,7 @@ import NavigationPage from '../../lib/navigationPage';
 import PieChart from '../../lib/pieChart';
 import BubbleChart from '../../lib/bubbleChart';
 import BarChart from '../../lib/barChart';
+import Vector from '../../lib/vectors';
 
 import Text from './constants';
 import Data from './data';
@@ -21,7 +23,7 @@ export default function Intro(props) {
 
   return (
     <div>
-      <div className="bg-blue text-offwhite h-screen min-w-full overflow-x-scroll flex">
+      <div className="bg-blue text-offwhite h-screen w-screen flex">
         <motion.div
           className="self-start m-3"
           initial="hidden"
@@ -52,8 +54,9 @@ export default function Intro(props) {
           </div>
         </div>
       </div>
-      <div className="bg-red h-screen min-w-full flex justify-center content-center">
-        <div className="font-sans uppercase text-8xl mt-96 text-white">So why is <span className="wave bg-wave-pattern">OCEAN PLASTIC POLLUTION</span> a problem?</div>
+      <div className="bg-yellow h-screen w-screen relative">
+        <div className="font-sans uppercase text-8xl text-dark text-center p-36">So <span className="text-red">why</span> is OCEAN PLASTIC POLLUTION a problem?</div>
+        <Vector name="wave-bottom2" className="absolute bottom-0" />
       </div>
       <NavigationPage introFlow />
     </div>
