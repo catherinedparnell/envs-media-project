@@ -50,6 +50,7 @@
     "framer-motion": "^4.1.11",
     "jquery": "^3.5.0",
     "lodash.debounce": "^4.0.8",
+    "lottie-react": "^2.1.0",
     "react": "^16.13.1",
     "react-chartjs-2": "^3.0.3",
     "react-compass": "^0.1.0",

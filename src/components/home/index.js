@@ -1,12 +1,14 @@
-import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import America from './america';
 
 export default function Home() {
   const [left, setLeft] = useState(null);
   const [top, setTop] = useState(null);
   const [none, setNone] = useState(true);
   const [show, setShow] = useState(false);
+  const [onNav, setOnNav] = useState(false);
+  const [textID, setTextID] = useState(-1);
 
   function onMouseMove(e) {
     if (!show) {
@@ -35,36 +37,26 @@ export default function Home() {
     }
   });
 
-  const variants = {
-    visible: { opacity: 1, transition: { duration: 2 } },
-    hidden: { opacity: 0 },
+  const handleClick = () => {
+    if (textID < 2) {
+      if (textID === 1) {
+        setOnNav(true);
+      }
+      setTextID(textID + 1);
+    }
   };
 
-  console.log(window.screen.width, window.screen.height);
-
-  return (
-    <NavLink to="/intro">
-      <div className="bg-dark text-offwhite flex h-screen relative">
-        <motion.div
-          className="flex-col w-1/2 self-end m-3 mb-36"
-          initial="hidden"
-          animate="visible"
-          variants={variants}
-        >
-          <div className="font-sans uppercase text-7xl">
-            Governments are imposing legislation to reduce <span className="text-red">plastic</span> in
-          </div>
-          <div className="font-sans uppercase text-9xl bg-wave-pattern wave">
-            our oceans.
-          </div>
-        </motion.div>
-        <motion.div initial="hidden"
-          animate="visible"
-          variants={variants}
-          className={none ? 'hidden' : 'absolute h-10 w-10 rounded-full bg-yellow'}
-          style={{ left, top }}
-        />
+  if (onNav) {
+    return (
+      <NavLink to="/intro">
+        <America left={left} top={top} none={none} textID={textID} />
+      </NavLink>
+    );
+  } else {
+    return (
+      <div onClick={handleClick} role="button" tabIndex={0}>
+        <America left={left} top={top} none={none} textID={textID} />
       </div>
-    </NavLink>
-  );
+    );
+  }
 }

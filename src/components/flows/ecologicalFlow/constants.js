@@ -8,10 +8,12 @@ const Text = {
   journey: 'Suzie is making the 1,500 mile journey to lay her eggs on the very same beach where she was born.',
   eggs: 'Suzie may lay up to 2,300 eggs in her lifetime, making this trek to lay her nests every two to three years.',
   threat: 'But the long distance is not the only obstacle she faces. There is an even greater threat looming...',
-  story: 'Suzie’s story is not unique. Thousands of sea turtles die due to ocean plastic pollution every year. Some encounter the same plight as Suzie, becoming entangled in plastic debris, while many others die from plastic ingestion.',
-  caught: 'It’s easy for sea turtles to mistake a plastic bag for a delicious jellyfish or unintentionally get caught in packaging waste like plastic pack rings.',
-  hatchlings: 'And Suzie’s hatchlings are particularly vulnerable. Just one piece of plastic can be enough to kill a baby sea turtle.',
-  actions: 'Without actions to reduce the amount of plastic entering our oceans, we risk losing these beautiful creatures that have been in the ocean since dinosaurs roamed the Earth.',
+  story: 'Suzie’s story is not unique. Thousands of sea turtles in U.S. waters die due to ocean plastic pollution every year.',
+  others: 'Some encounter the same plight as Suzie, while many others die from plastic ingestion.',
+  caught: 'It’s easy for sea turtles to mistake a plastic bag for a jellyfish or unintentionally get caught in packaging waste.',
+  hatchlings: 'And Suzie’s hatchlings are particularly vulnerable',
+  baby: 'Just one piece of plastic can be enough to kill a baby sea turtle.',
+  actions: 'Without actions to reduce the amount of plastic entering our oceans, we risk losing these beautiful creatures that grace our American beaches.',
 };
 
 export default Text;
