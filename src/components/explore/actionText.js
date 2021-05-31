@@ -19,7 +19,7 @@ const Text = {
   cleanup: '4. Participate in a beach or river cleanup near you.',
   help: 'Help clean up a local waterway to keep plastic pollution from reaching the ocean in the first place! This is a great way to get outside with family, friends, or fellow community members, all while helping prevent ocean pollution. And you can actually see the tangible results of your efforts!',
   bans: '5. Support bans and other plastic legislation.', 
-  support: 'If your community is thinking about adopting policies to limit the usage and availability of plastic bags, takeout containers, bottles, or other single-use plastics, support their adoption! You may think these policies are a nuisance or restrictive, but they are a necessary step in limiting plastic pollution and protecting wildlife and human health. Learn more about plastic legislation by visiting this website:',
+  support: 'If your community is thinking about adopting policies to limit the usage and availability of plastic bags, takeout containers, bottles, or other single-use plastics, support their adoption! You may think these policies are a nuisance or restrictive, but they are a necessary step in limiting plastic pollution and protecting wildlife and human health. Learn more about plastic legislation by visiting this website: https://www.plasticbaglaws.org/',
 };
 
 export default Text;
