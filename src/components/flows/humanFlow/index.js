@@ -11,7 +11,7 @@ import AnimatedPlastics from '../../lib/animatedPlastics';
 import Text from './constants';
 import Data from './data';
 import Human from './animations/human.json';
-import Fish from './animations/fish.json';
+import Fish from './animations/fastFish.json';
 
 export default function HumanFlow() {
   const [started, setStarted] = useState(false);
