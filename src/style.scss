@@ -103,18 +103,24 @@
 
 // nav bar
 .nav {
+  div, .navLink {
+    transition: 0.3s;
+  }
   div:hover {
     background-color: #fffffc;
     color:#435058;
+    transition: 0.3s;
   }
   
   .navLink:hover {
     background-color: #F25F5C;
+    transition: 0.3s;
   }
   
   .navLink:hover div {
     background-color: #fffffc;
     color:#435058;
+    transition: 0.3s;
   }
 }
 

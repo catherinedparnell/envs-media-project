@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 import LineChart from '../../lib/lineChart';
 import Vector from '../../lib/vectors';
@@ -7,7 +8,12 @@ import Vector from '../../lib/vectors';
 import Text from './constants';
 import Data from './data';
 
-export default function CombinedFlow(props) {
+export default function CombinedFlow() {
+  const variants = {
+    visible: { opacity: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0 },
+  };
+
   return (
     <div className="text-dark">
       <div className="bg-yellow relative h-screen w-screen">
@@ -40,14 +46,36 @@ export default function CombinedFlow(props) {
         </div>
       </div>
       <div className="bg-blue relative h-screen w-screen">
-        <div className="text-center text-6xl p-20">{Text.buried}</div>
+        <div className="bg-offwhite container p-10 mx-10">
+          <div className="text-center text-6xl">{Text.buried}</div>
+        </div>
         <Vector name="sand-plastics" className="bottom-0 absolute" />
       </div>
       <div className="bg-yellow relative h-screen w-screen">
-        <div className="text-center text-6xl p-20">{Text.break}</div>
-        <Vector name="plastics-chart" className="bottom-0 absolute" />
+        <div className="text-center bottom-0 absolute text-6xl p-20">{Text.break}</div>
+        <Vector name="plastics-chart" className="pt-40" />
       </div>
-      <NavLink to="/explore">Go explore</NavLink>
+      <div className="bg-dark text-offwhite relative h-screen w-screen">
+        <div className="text-center text-6xl p-20">{Text.time}</div>
+        <div className="text-center text-6xl p-20">{Text.now}</div>
+        <motion.div initial="hidden"
+          animate="visible"
+          variants={variants}
+          className="absolute left-1/4 w-full mx-44 mt-40"
+        >
+          <NavLink to="/explore">
+            <div className="container relative flex-col bg-offwhite text-dark uppercase w-1/4 text-3xl p-10 text-center">
+              Click to explore
+              <div className="scroll-prompt" scroll-prompt="" ng-show="showPrompt" style={{ opacity: 1 }}>
+                <div className="scroll-prompt-arrow-container">
+                  <div className="scroll-prompt-arrow"><div /></div>
+                  <div className="scroll-prompt-arrow"><div /></div>
+                </div>
+              </div>
+            </div>
+          </NavLink>
+        </motion.div>
+      </div>
     </div>
   );
 }

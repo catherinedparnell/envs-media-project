@@ -11,8 +11,8 @@ const Text = {
   ],
   buried: 'Plastics buried in the sand will resurface, contributing to persistent macroplastics.',
   break: 'Existing large plastics will continue to break down into smaller and smaller pieces, creating more microplastics.',
-  time: 'We still have time to prevent the steep upward trajectory of scenario 3 and manage this problem.',
-  now: 'BUT THAT MEANS LIMITING OUR OCEAN PLASTIC POLLUTION NOW.',
+  time: 'But we still have the power to do something about it.',
+  now: 'THAT MEANS STARTING NOW.',
   end: 'Continue on to learn more.',
 };
 

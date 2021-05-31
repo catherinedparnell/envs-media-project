@@ -46,7 +46,10 @@ export default function Intro(props) {
             {isOn ? <BubbleChart width={450} height={450} data={Data.bubble} /> : <BarChart width={450} height={450} data={Data.bar2} />}
           </div>
           <div className="container flex bg-yellow justify-center p-10 m-5 my-60">
-            <div className="font-sans uppercase text-3xl text-blue">{Text.entersOceans}</div>
+            <div className="flex-col h-full justify-between">
+              <div className="font-sans uppercase text-3xl text-blue">{Text.entersOceans}</div>
+              <div className="font-sans uppercase text-3xl text-blue pt-56">That&apos;s 3% of all plastic waste.</div>
+            </div>
             <PieChart width={450} height={450} data={Data.bar} />
           </div>
           <div className="container flex bg-yellow justify-center p-10 m-5 my-80">

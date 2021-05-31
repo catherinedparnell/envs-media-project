@@ -24,8 +24,8 @@ export default function HumanFlow() {
   return (
     <div>
       <div className="bg-blue text-dark flex-col justify-center h-screen overflow-y-scroll">
-        <div className="w-1/2 flex-col justify-center">
-          {Text.intro.map((text) => <div className="font-sans uppercase text-5xl py-60">{text}</div>)}
+        <div className="flex-col justify-center">
+          {Text.intro.map((text) => <div className="bg-yellow container p-10 my-80 ml-20"><div className="font-sans uppercase text-center text-5xl">{text}</div></div>)}
         </div>
       </div>
       <div className="bg-yellow text-dark h-screen">
@@ -65,13 +65,14 @@ export default function HumanFlow() {
           <LottieAnimation animationData={Human} />
         </div>
       </div>
-      <div className="bg-yellow text-red flex-col h-screen justify-center relative">
-        <div className="flex">
-          <div className="font-sans text-right text-4xl w-1/2 pr-5">{Text.extent}</div>
-          <div className="font-sans text-left text-4xl w-1/2 pl-5 pt-80 pb-5">{Text.harm}</div>
+      <div className="bg-red text-dark flex-col h-screen justify-center relative">
+        <div className="bg-yellow container p-5 w-1/2 absolute top-20 left-1/4">
+          <div className="font-sans text-4xl text-center">{Text.extent}</div>
         </div>
-        <div className="font-sans text-dark text-center w-1/2 text-4xl absolute bottom-10 left-1/4">{Text.final}</div>
-        {/* <Vector name="wave-bottom" className="absolute bottom-0" /> */}
+        <div className="bg-yellow container z-50 w-1/2 absolute bottom-20 left-1/4 p-5">
+          <div className=" font-sans text-dark text-center text-4xl ">{Text.final}</div>
+        </div>
+        <Vector name="wave-bottom" className=" z-0 absolute bottom-0" />
       </div>
       <NavigationPage />
     </div>
