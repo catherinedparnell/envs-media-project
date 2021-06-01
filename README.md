@@ -100,11 +100,12 @@ We created animations in [Adobe After Effects](https://www.adobe.com/products/af
 
 For more detailed documentation on file structure and specific functions in the code, check the project files themselves.
 
-## Acknowledgments
-We would like to thank Professor Michael Cox and the rest of our ENVS 80.14 classmates for their enthusiasm and thoughtful feedback.
-
 ---
 
-### Designed and developed by
+### Authors
 * Catherine Parnell '22, developer + designer
 * Julie Jones '22, designer + animator
+
+
+### Acknowledgments
+We would like to thank Professor Michael Cox and the rest of our ENVS 80.14 classmates for their enthusiasm and thoughtful feedback.
