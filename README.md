@@ -5,15 +5,18 @@ Media project focused on increasing awareness about ocean pollution. The site is
 Check out the project's Figma [here](https://www.figma.com/file/H9cc0642iE5lUzLiup6LrR/Website?node-id=149%3A192).
 [2-4 screenshots from the app]
 
+### Animations
+We created animations in [Adobe After Effects](https://www.adobe.com/products/aftereffects.html?sdid=KKQOW&kw=semgeneric&mv=search&ef_id=CjwKCAjwtdeFBhBAEiwAKOIy57-l71oNDjKwZOMwbgoWCZ6579dpdp2R2I0eDStaCpWmBQTj7-1k5hoCyroQAvD_BwE:G:s&s_kwcid=AL!3085!3!384483773473!e!!g!!after%20effects&gclid=CjwKCAjwtdeFBhBAEiwAKOIy57-l71oNDjKwZOMwbgoWCZ6579dpdp2R2I0eDStaCpWmBQTj7-1k5hoCyroQAvD_BwE) using custom made SVGs from our [Figma](https://www.figma.com/file/H9cc0642iE5lUzLiup6LrR/Website?node-id=149%3A192).
+
 ## Architecture
 ### Tech Stack
-* [React](https://reactjs.org/)
+* [React](https://reactjs.org/) javascript framework
 
 ### Notable Libraries
-* [Tailwind CSS](https://tailwindcss.com/)
-* [Framer Motion](https://www.framer.com/motion/)
-* [Lottie React](https://github.com/LottieFiles/lottie-react)
-* [React Chart.js](https://www.npmjs.com/package/react-chartjs-2)
+* [Tailwind CSS](https://tailwindcss.com/) for CSS simplicity
+* [Framer Motion](https://www.framer.com/motion/) for custom animations
+* [Lottie React](https://github.com/LottieFiles/lottie-react) for custom Adobe After Effects animations
+* [React Chart.js](https://www.npmjs.com/package/react-chartjs-2) for data visualizations
 
 ### Style
 * [Airbnb's ESLint Configuration](https://airbnb.io/javascript/)
@@ -95,7 +98,7 @@ Check out the project's Figma [here](https://www.figma.com/file/H9cc0642iE5lUzLi
 |  └──yarn.lock
 ```
 
-For more detailed documentation on file structure and specific functions in the code, feel free to check the project files themselves.
+For more detailed documentation on file structure and specific functions in the code, check the project files themselves.
 
 ## Acknowledgments
 We would like to thank Professor Michael Cox and the rest of our ENVS 80.14 classmates for their enthusiasm and thoughtful feedback.
