@@ -12,12 +12,12 @@ export default function Health() {
           <div className="font-bold text-center uppercase text-4xl">Plastic &amp; Human health</div>
         </div>
         <div className="w-full font-bold text-3xl pt-10">{Text.microplastic}</div>
-        <img src="../../../images/particlecategorytable.png" alt="table" className="h-3/5 w-3/5 mt-10" />
+        <img src="/images/particlecategorytable.png" alt="table" className="h-3/5 w-3/5 mt-10" />
         <div className="w-full font-bold text-3xl pt-10">{Text.harmful}</div>
         <div className="w-full pt-10">{Text.ingestion}</div>
         <div className="flex w-full justify-evenly">
-          <img src="../../../images/crabwordbubble.png" alt="table" className="h-2/5 w-2/5 mt-10 p-10" />
-          <img src="../../../images/microplastichealth.png" alt="table" className="h-2/5 w-2/5 mt-10" />
+          <img src="/images/crabwordbubble.png" alt="table" className="h-2/5 w-2/5 mt-10 p-10" />
+          <img src="/images/microplastichealth.png" alt="table" className="h-2/5 w-2/5 mt-10" />
         </div>
         <div className="w-full pt-10">{Text.negative}</div>
         <div className="w-full pt-10">{Text.examples}</div>
@@ -30,9 +30,9 @@ export default function Health() {
           <div className="font-bold text-center text-4xl">{Text.sectionHeader}</div>
         </div>
         <div className="w-full font-bold text-3xl pt-10">{Text.biomagnification}</div>
-        <img src="../../../images/foodchain.png" alt="table" className="mt-10" />
+        <img src="/images/foodchain.png" alt="table" className="mt-10" />
         <div className="w-full pt-10">{Text.plate}</div>
-        <img src="../../../images/plateofmussels.png" alt="table" className="h-1/5 w-1/5 mt-10" />
+        <img src="/images/plateofmussels.png" alt="table" className="h-1/5 w-1/5 mt-10" />
         <div className="w-full pt-10">{Text.understand}</div>
         <div className="w-full pt-10">{Text.linked}</div>
         <div className="w-full mt-10 p-10 bg-yellow container">

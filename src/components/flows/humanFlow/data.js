@@ -6,7 +6,7 @@ const Colors = ['#F25F5C', '#C9E3CA', '#A7E4FA', '#9BBD51', '#4AA9CC', '#F2925C'
 const Data = {
   labels: PlasticInOceanData.ocean_labels,
   datasets: [{
-    label: 'Count of microplastics in surface oceans (n^10)',
+    label: 'Count of microplastics in surface oceans in trillions',
     data: PlasticInOceanData.microplastic_values,
     backgroundColor: Colors,
     borderWidth: 1,

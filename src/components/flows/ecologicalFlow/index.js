@@ -93,7 +93,7 @@ export default function EcologicalFlow() {
           <div className="bg-yellow container absolute left-0 top-10 p-8 z-50 m-5 w-1/2">
             <div className="font-sans uppercase text-3xl">{Text.others}</div>
           </div>
-          <img src="../../../images/plasticsSvg.png" alt="alt" className="absolute right-0" />
+          <img src="/images/plasticsSvg.png" alt="alt" className="absolute right-0" />
         </div>
         <div className="w-screen h-screen flex relative bg-dark">
           <div className="bg-yellow container absolute left-10 top-1/5 p-8 z-50 m-5 w-1/4 text-center">
