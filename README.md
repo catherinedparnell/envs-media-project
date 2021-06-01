@@ -43,22 +43,22 @@ We created animations in [Adobe After Effects](https://www.adobe.com/products/af
 |           └──combinedFlow/                  # Folder containing components and data for combined flow
 |               └──animations/                # Folder containing animations-related data
 |               └──constants.js     
-|               └──data.js                    # Folder containing visualization-related data
+|               └──data.js                    # File containing visualization-related data
 |               └──index.js           
 |           └──ecologicalFlow/                # Folder containing components and data for ecological flow
 |               └──animations/                # Folder containing animations-related data
 |               └──constants.js     
-|               └──data.js                    # Folder containing visualization-related data
+|               └──data.js                    # File containing visualization-related data
 |               └──index.js  
 |           └──humanFlow/                     # Folder containing components and data for human flow
 |               └──animations/                # Folder containing animations-related data
 |               └──constants.js     
-|               └──data.js                    # Folder containing visualization-related data
+|               └──data.js                    # File containing visualization-related data
 |               └──index.js  
 |           └──introFlow/                     # Folder containing components and data for intro flow
 |               └──toggle/                    # Component for toggle using Figma Motion
 |               └──constants.js     
-|               └──data.js                    # Folder containing visualization-related data
+|               └──data.js                    # File containing visualization-related data
 |               └──index.js  
 |        └──home/                             # Folder containing components for home page
 |               └──america.js 
