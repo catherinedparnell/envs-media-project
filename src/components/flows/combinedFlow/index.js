@@ -4,9 +4,11 @@ import { motion } from 'framer-motion';
 
 import LineChart from '../../lib/lineChart';
 import Vector from '../../lib/vectors';
+import LottieAnimation from '../../lib/lottieAnimation';
 
 import Text from './constants';
 import Data from './data';
+import Trident from './animations/trident.json';
 
 export default function CombinedFlow() {
   const variants = {
@@ -55,14 +57,16 @@ export default function CombinedFlow() {
         <div className="text-center bottom-0 absolute text-6xl p-20">{Text.break}</div>
         <Vector name="plastics-chart" className="pt-40" />
       </div>
-      <div className="bg-dark text-offwhite relative h-screen w-screen">
+      <div className="bg-dark text-offwhite relative h-screen w-screen overflow-hidden">
         <div className="text-center text-6xl p-20">{Text.time}</div>
-        <Vector name="trident" className="absolute h-60 w-60 left-32 ml-96" />
-        <div className="text-center text-6xl mt-72 m-10">{Text.now}</div>
+        <div className="absolute -top-60">
+          <LottieAnimation animationData={Trident} />
+        </div>
+        <div className="text-center text-6xl pt-56">{Text.now}</div>
         <motion.div initial="hidden"
           animate="visible"
           variants={variants}
-          className="absolute left-1/4 w-full mx-44 mt-3"
+          className="absolute bottom-10 left-1/4 w-full mx-44 mt-3"
         >
           <NavLink to="/explore">
             <div className="container relative flex-col bg-offwhite text-dark uppercase w-1/4 text-3xl p-10 text-center">

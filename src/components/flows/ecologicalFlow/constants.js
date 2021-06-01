@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 const Text = {
-  graphTitle: 'Estimated weight of macroplastics in tons',
+  graphTitle: 'Estimated weight (tons) of macroplastics in surface oceans',
   plasticAmount: 'The world’s surface oceans contain almost 270,000 tons of plastics ',
   suzie: 'THIS IS SUZIE THE SEA TURTLE.',
   endangered: 'There are only SEVEN species of sea turtles in the world, and nearly all of them are ENDANGERED.',

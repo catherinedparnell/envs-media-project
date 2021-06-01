@@ -28,6 +28,7 @@ module.exports = {
       red: '#F25F5C',
       offwhite: '#FFFFFC',
       darker: '#29373E',
+      turtle: '#9BBD51',
     }),
   },
   variants: {

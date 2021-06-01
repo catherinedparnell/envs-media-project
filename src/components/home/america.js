@@ -77,10 +77,10 @@ export default function America(props) {
         <motion.div initial="hidden"
           animate="visible"
           variants={variants}
-          className={none ? 'hidden' : 'absolute h-2 w-2'}
+          className={none ? 'hidden' : 'absolute h-20 w-20'}
           style={{ left, top }}
         >
-          <Vector name="trident" className="h-2 w-2" />
+          <Vector name="trident" />
         </motion.div>
       ) : (
         <motion.div initial="hidden"
