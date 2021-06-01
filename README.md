@@ -84,13 +84,13 @@ Check out the project's Figma [here](https://www.figma.com/file/H9cc0642iE5lUzLi
 |     └──_redirects
 |     └──index.html
 |     └──index.js
-|     └──style.scss.                 # Styling with CSS/SASS
+|     └──style.scss.                          # Styling with CSS/SASS
 |  └──.babelrc 
 |  └──.eslintrc 
 |  └──.gitignore 
 |  └──README.md
 |  └──package.json
-|  └──tailwind.config.js             # Styling config with Tailwind.js
+|  └──tailwind.config.js                      # Styling config with Tailwind.js
 |  └──webpack.config.js
 |  └──yarn.lock
 ```
