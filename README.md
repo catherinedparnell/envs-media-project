@@ -2,6 +2,7 @@
 Media project focused on increasing awareness about ocean pollution. The site is deployed to this [link](https://affectionate-bohr-df8be6.netlify.app/).
 
 ## Designs
+### Figma
 Check out the project's Figma [here](https://www.figma.com/file/H9cc0642iE5lUzLiup6LrR/Website?node-id=149%3A192).
 [2-4 screenshots from the app]
 
