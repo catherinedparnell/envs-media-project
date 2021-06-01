@@ -10,6 +10,7 @@ import Suzie from './animations/suziePlastic.json';
 import SuzieSwim from './animations/suzieSwim.json';
 import SuzieFloats from './animations/suzieFloats.json';
 import SuzieDiagonal from './animations/suzieDiagonal.json';
+import BabyTurtles from './animations/babyTurtle.json';
 
 import Text from './constants';
 import Vector from '../../lib/vectors';
@@ -25,18 +26,20 @@ export default function EcologicalFlow() {
     <div className="overflow-x-hidden">
       <div className="relative bg-blue text-dark">
         <div className="w-screen h-screen flex-col relative bg-yellow">
-          <div className="bg-yellow container absolute left-0 bottom-0 p-8 z-50 m-5 w-1/2">
-            <div className="font-sans uppercase text-5xl">This is <span className="text-turtle">Suzie</span> the sea turtle.</div>
+          <div className="bg-yellow container absolute left-0 bottom-0 p-8 z-50 m-5 w-1/4">
+            <div className="font-sans uppercase text-5xl">This is <span className="text-turtle">Suzie</span>
+              <div>the sea turtle.</div>
+            </div>
           </div>
-          <div className="absolute left-96 -bottom-36 z-50">
+          <div className="absolute z-50">
             <LottieAnimation animationData={SuzieFloats} />
           </div>
-          <Vector name="wave-bottom" className="absolute bottom-40 z-0" />
-          <div className="w-screen bg-blue h-40 absolute bottom-0 z-0" />
+          <Vector name="wave-bottom" className="absolute bottom-60 z-0" />
+          <div className="w-screen bg-blue h-60 absolute bottom-0 z-0" />
         </div>
         <div className="h-screen w-screen relative">
-          <div className="bg-yellow container absolute left-0 bottom-0 p-8 z-50 m-5 w-1/2">
-            <div className="font-sans uppercase text-5xl">{Text.endangered}</div>
+          <div className="bg-yellow container absolute right-0 top-0 p-8 z-50 m-5 w-1/2">
+            <div className="font-sans uppercase text-4xl">{Text.endangered}</div>
           </div>
           <LottieAnimation animationData={SuzieDiagonal} />
         </div>
@@ -93,24 +96,25 @@ export default function EcologicalFlow() {
           <img src="../../../images/plasticsSvg.png" alt="alt" className="absolute right-0" />
         </div>
         <div className="w-screen h-screen flex relative bg-dark">
-          <div className="bg-yellow container absolute left-10 top-1/2 p-8 z-50 m-5 w-1/4 text-center">
+          <div className="bg-yellow container absolute left-10 top-1/5 p-8 z-50 m-5 w-1/4 text-center">
             <div className="font-sans uppercase text-3xl">{Text.hatchlings}</div>
           </div>
-          <Vector name="suzie" className="absolute top-28 right-40" />
-          <div className="flex-col my-40 ml-40">
-            <Vector name="suzie" className="m-10 w-20 h-20" />
-            <Vector name="suzie" className="m-10 ml-32 w-20 h-20" />
-            <Vector name="suzie" className="m-10 w-20 h-20" />
+          <div className="absolute left-1/2"><LottieAnimation animationData={BabyTurtles} /></div>
+          <div className="absolute left-1/4 top-40"><LottieAnimation animationData={BabyTurtles} /></div>
+          <div className="absolute left-3/4"><LottieAnimation animationData={BabyTurtles} /></div>
+          <div className="absolute right-1/2 bottom-10"><LottieAnimation animationData={BabyTurtles} /></div>
+          <div className="absolute right-3/4 bottom-0"><LottieAnimation animationData={BabyTurtles} /></div>
+          <LottieAnimation animationData={BabyTurtles} />
+          <div className="bg-yellow container absolute right-10 bottom-0 p-8 z-50 m-5 w-1/4 text-center">
+            <div className="font-sans uppercase text-3xl">{Text.baby}</div>
           </div>
-          <div className="font-sans uppercase text-3xl w-1/2 absolute right-0 bottom-0 p-8">{Text.baby}</div>
         </div>
         <div className="w-screen h-screen flex relative bg-red justify-center">
           <div className="bg-yellow text-dark container h-1/2 w-1/2 z-50 mt-10">
             <div className="font-sans uppercase text-5xl text-center p-10">{Text.actions}</div>
           </div>
-
         </div>
-        <Vector name="wave-bottom" className="z-0 absolute bottom-0" />
+        <Vector name="wave-bottom" className="z-0 absolute -bottom-10" />
       </div>
       <NavigationPage />
     </div>
