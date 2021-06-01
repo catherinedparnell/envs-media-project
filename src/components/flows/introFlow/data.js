@@ -26,7 +26,7 @@ for (let i = 0; i < countries.length; i++) {
 }
 
 const Data = {
-  bar: {
+  pie: {
     labels: [
       'Ocean Plastics',
       'Other',
@@ -46,7 +46,7 @@ const Data = {
   bar2: {
     labels: countries,
     datasets: [{
-      label: 'Total World Plastic Production',
+      label: 'Average individual plastic waste per day (lbs)',
       data: amount.map((x) => { return x * 2.20462; }),
       backgroundColor: Colors,
       borderColor: '#435058',

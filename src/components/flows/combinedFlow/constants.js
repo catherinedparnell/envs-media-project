@@ -11,7 +11,7 @@ const Text = {
   ],
   buried: 'Plastics buried in the sand will resurface, contributing to persistent macroplastics.',
   break: 'Existing large plastics will continue to break down into smaller and smaller pieces, creating more microplastics.',
-  time: 'But we still have the power to do something about it.',
+  time: 'But we still have the power to do something about it...',
   now: 'THAT MEANS STARTING NOW.',
   end: 'Continue on to learn more.',
 };

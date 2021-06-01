@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import {
   BrowserRouter as Router, Route, Switch,
 } from 'react-router-dom';
+
 import EcologicalFlow from './flows/ecologicalFlow';
 import HumanFlow from './flows/humanFlow';
 import CombinedFlow from './flows/combinedFlow';
@@ -16,6 +17,7 @@ import Suzie from './explore/suzie';
 import Health from './explore/health';
 import Action from './explore/action';
 import Methods from './explore/methods';
+import ScrollToTop from './lib/scrollToTop';
 
 const FallBack = (props) => {
   return (
@@ -26,7 +28,7 @@ const FallBack = (props) => {
 const App = (props) => {
   return (
     <Router>
-      <div>
+      <ScrollToTop>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/eco" component={EcologicalFlow} />
@@ -41,7 +43,7 @@ const App = (props) => {
           <Route path="/intro" component={Intro} />
           <Route component={FallBack} />
         </Switch>
-      </div>
+      </ScrollToTop>
     </Router>
   );
 };

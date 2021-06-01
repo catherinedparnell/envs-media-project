@@ -27,16 +27,16 @@ const Text = {
   section: 'Sea Turtles and Plastic',
   impactTitle: 'Ocean plastic pollution can negatively impact sea turtles in 4 main ways:',
   impact: [
-    '1. Sea turtles confuse plastic for food, especially plastic bags for jellyfish. This then causes the turtles/’ stomachs to feel full so that they neglect to seek out other food and ultimately starve to death.',
+    '1. Sea turtles confuse plastic for food, especially plastic bags for jellyfish. This then causes the turtles’ stomachs to feel full so that they neglect to seek out other food and ultimately starve to death.',
     '2. Plastic trash on turtle nesting beaches can entangle female sea turtles as they crawl through the sand to find a place for their nests.',
     '3. Sea turtles become caught in plastic debris while they are swimming. At least 1,000 sea turtles die every year from becoming tangled in plastic waste like fishing nets or plastic pack rings.',
     '4. Sea turtles consume microplastics through their food when the fish or other animals they eat have consumed tiny bits of plastic. 52% of all sea turtles have eaten particles of plastic.',
   ],
   young: 'Plastic pollution impacts sea turtles\' youngest generations most.',
-  baby: 'Hatchlings and young sea turtles are particularly likely to consume small bits of plastic. While baby sea turtles spend the formative years of their lives drifting in patches of Sargassum seaweed, they are surviving by eating any food that floats by. They/’ll take whatever they can get – including plastic.',
+  baby: 'Hatchlings and young sea turtles are particularly likely to consume small bits of plastic. While baby sea turtles spend the formative years of their lives drifting in patches of Sargassum seaweed, they are surviving by eating any food that floats by. They’ll take whatever they can get – including plastic.',
   digestive: 'As many as 276 pieces of hard plastic have been found in the digestive system of a baby sea turtle.',
   death: 'Plastic fragments impact the absorption of nutrients and the gut functions of the developing baby turtles, leading to their early deaths.',
-  hope: 'But remember, sea turtles like Suzie and her hatchlings still have hope! We can begin addressing teh problem of ocean plastic pollution today. Go to the Take Action page to learn how you can help reduce the amount of waste entering our oceans.',
+  hope: 'But remember, sea turtles like Suzie and her hatchlings still have hope! We can begin addressing the problem of ocean plastic pollution today. Go to the Take Action page to learn how you can help reduce the amount of waste entering our oceans.',
 };
 
 export default Text;

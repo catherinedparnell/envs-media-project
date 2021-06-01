@@ -50,7 +50,7 @@ export default function Intro(props) {
               <div className="font-sans uppercase text-3xl text-blue">{Text.entersOceans}</div>
               <div className="font-sans uppercase text-3xl text-blue pt-56">That&apos;s 3% of all plastic waste.</div>
             </div>
-            <PieChart width={450} height={450} data={Data.bar} />
+            <PieChart width={450} height={450} data={Data.pie} />
           </div>
           <div className="container flex bg-yellow justify-center p-10 m-5 my-80">
             <div className="font-sans uppercase text-3xl text-blue">{Text.problem}</div>

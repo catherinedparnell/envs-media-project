@@ -7,8 +7,8 @@
     // background-image: linear-gradient(to bottom, #ff9999, #ff5b5b),
     //   linear-gradient(to bottom, #e5b1ff, #e5b1ff);
 
-  background: #CFE6ED;
-  box-sizing: border-box;
+    background: #CFE6ED;
+    box-sizing: border-box;
 
 }
   
@@ -121,6 +121,14 @@
     background-color: #fffffc;
     color:#435058;
     transition: 0.3s;
+  }
+
+  div, .navLink {
+    transition: 0.3s;
+  }
+
+  #logo {
+	pointer-events: none;
   }
 }
 

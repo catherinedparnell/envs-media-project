@@ -46,7 +46,7 @@ export default function CombinedFlow() {
         </div>
       </div>
       <div className="bg-blue relative h-screen w-screen">
-        <div className="bg-offwhite container p-10 mx-10">
+        <div className="bg-offwhite container p-20 mx-10">
           <div className="text-center text-6xl">{Text.buried}</div>
         </div>
         <Vector name="sand-plastics" className="bottom-0 absolute" />
@@ -57,11 +57,12 @@ export default function CombinedFlow() {
       </div>
       <div className="bg-dark text-offwhite relative h-screen w-screen">
         <div className="text-center text-6xl p-20">{Text.time}</div>
-        <div className="text-center text-6xl p-20">{Text.now}</div>
+        <Vector name="trident" className="absolute h-60 w-60 left-32 ml-96" />
+        <div className="text-center text-6xl mt-72 m-10">{Text.now}</div>
         <motion.div initial="hidden"
           animate="visible"
           variants={variants}
-          className="absolute left-1/4 w-full mx-44 mt-40"
+          className="absolute left-1/4 w-full mx-44 mt-3"
         >
           <NavLink to="/explore">
             <div className="container relative flex-col bg-offwhite text-dark uppercase w-1/4 text-3xl p-10 text-center">

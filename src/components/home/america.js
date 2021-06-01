@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import Vector from '../lib/vectors';
+import VectorLogo from '../explore/vectors';
 import Text from './constants';
 
 export default function America(props) {
@@ -18,7 +19,7 @@ export default function America(props) {
     switch (textID) {
       case 0:
         return (
-          <div className="relative flex-col justify-center h-full">
+          <div className="relative flex-col justify-center h-full pt-20">
             {Text[textID]}
           </div>
         );
@@ -76,9 +77,11 @@ export default function America(props) {
         <motion.div initial="hidden"
           animate="visible"
           variants={variants}
-          className={none ? 'hidden' : 'absolute h-10 w-10 rounded-full bg-yellow'}
+          className={none ? 'hidden' : 'absolute h-2 w-2'}
           style={{ left, top }}
-        />
+        >
+          <Vector name="trident" className="h-2 w-2" />
+        </motion.div>
       ) : (
         <motion.div initial="hidden"
           animate="visible"
@@ -94,7 +97,8 @@ export default function America(props) {
         animate="visible"
         variants={variants}
       >
-        <div className="container bg-offwhite text-dark uppercase text-xs w-20 absolute top-0 right-0 m-5 px-3 py-1 text-right">
+        <div className="container flex h-10 w-44 justify-evenly bg-offwhite text-dark uppercase text-xs absolute top-0 right-0 m-5 px-3 py-1 text-right">
+          <VectorLogo name="dark-logo" className="h-full w-full" />
           <NavLink to="/explore">Skip the story</NavLink>
         </div>
       </motion.div>

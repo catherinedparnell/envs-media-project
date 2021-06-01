@@ -196,7 +196,7 @@ const Vectors = (props) => {
     case 'wave-tall':
       return (
         <svg className={className} width="5725" height="3294" viewBox="0 0 5725 3294" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5725.33 3294H0.327148V1482V110.5C532.827 712 725.327 700 1242.83 2C1940.83 592 2302.33 652 2723.33 2C2963.83 507.5 3676.4 822.652 4239.83 2C4997.83 664 5310.83 760.5 5725.33 2V3294Z" fill="#64A8C8" stroke="white" />
+          <path d="M5725.33 3294H0.327148V1482V110.5C532.827 712 725.327 700 1242.83 2C1940.83 592 2302.33 652 2723.33 2C2963.83 507.5 3676.4 822.652 4239.83 2C4997.83 664 5310.83 760.5 5725.33 2V3294Z" fill="#64A8C8" stroke="none" />
         </svg>
       );
     case 'plastics-chart':
@@ -486,6 +486,13 @@ const Vectors = (props) => {
           <path d="M1440 407H0V204.5V2C108.805 113.569 189.611 118.523 308.5 2C451.596 126.705 554.5 112.294 684.5 2C831.011 148.075 910.782 93.7119 1052.5 2C1246.69 162.434 1318.55 121.234 1440 2V407Z" fill="#64A8C8" stroke="none" />
         </svg>
       );
+
+    case 'trident':
+      return (
+        <svg className={className} width="54" height="68" viewBox="0 0 54 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.5472 41.5252L4.16194 23.8428L17.2792 24.4589L13.4617 27.074L23.9904 35.9568L29.4327 31.9901L20.9024 18.1076L16.7945 21.6572L14.1833 6.56448L29.5094 14.4311L23.2663 15.5112L33.8157 28.579L39.5723 24.9768L35.4598 13.4016L31.314 14.1189L35.7415 2.83476L45.7405 27.8191L36.3791 33.8135L52.2428 58.4347L49.0378 60.525L33.3323 36.528L23.5472 41.5252Z" fill="#FAF8D4" stroke="#787536" />
+        </svg>
+      );
     case 'sm-plastic-bag':
       return (
         <svg className={className} width="229" height="254" viewBox="0 0 229 254" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -615,12 +622,6 @@ const Vectors = (props) => {
         <svg className={className} width="259" height="148" viewBox="0 0 259 148" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="201.604" y="106.319" width="200.698" height="67.6292" rx="6" transform="rotate(-179.009 201.604 106.319)" fill="white" />
           <path d="M251.149 70.2734C254.255 72.7162 254.182 77.4476 251.003 79.8072L183.705 129.753C179.71 132.718 174.059 129.827 174.136 124.859L175.698 23.2058C175.774 18.2372 181.512 15.4975 185.413 18.5665L251.149 70.2734Z" fill="white" />
-        </svg>
-      );
-    case 'wave-tilt-left':
-      return (
-        <svg className={className} width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1440 459L0 1023V0C108.805 126.444 189.611 132.059 308.5 0C451.596 141.333 554.5 125 684.5 0C831.011 165.552 910.782 103.94 1052.5 0C1246.69 181.825 1318.55 135.132 1440 0V459Z" fill="#64A8C8" />
         </svg>
       );
     case 'wave-bottom':

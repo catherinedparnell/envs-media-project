@@ -2,13 +2,15 @@ import React from 'react';
 import NavBar from '../navBar';
 
 import Text from './methodologyText';
+import Vector from '../vectors';
 
 export default function Methods() {
   return (
-    <div className="mt-16 text-xl bg-offwhite">
+    <div className="mt-16 text-xl bg-offwhite text-darker">
       <NavBar />
-      <div className="m-10">
-        <div className="mt-20 py-5 bg-dark text-offwhite">
+      <div className="m-10 flex flex-col">
+        <Vector name="dark-logo" className="h-1/2 w-1/2 mt-10 self-center" />
+        <div className="py-5 bg-dark text-offwhite">
           <div className="text-center text-4xl">Methodology</div>
         </div>
         <div className="mt-10 py-5 bg-dark text-offwhite">

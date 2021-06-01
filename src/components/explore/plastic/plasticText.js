@@ -18,7 +18,7 @@ const Text = {
   microplastic: 'Microplastics are plastic particles that have diameters smaller than 5 mm. Once plastic is broken into these tiny pieces, it is more easily ingested by marine organisms and mixed into ocean sediments. Microplastics also often end up washed up, buried, or resurfaced along our coastlines and beaches.',
   particles: 'There are an estimated 5 trillion particles of microplastics just in the surface waters of our global oceans.',
   graphmicroTitle: 'Estimated count (n^10) of microplastic particles in surface oceans',
-  end: 'To learn more about microplastics and how they impact people navigate to our page on Human Health.',
+  end: 'To learn more about microplastics and how they impact people, navigate to our page on Human Health.',
 };
 
 export default Text;

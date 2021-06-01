@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 import NavigationPage from '../../lib/navigationPage';
 import Vector from '../../lib/vectors';
@@ -12,9 +13,16 @@ import Text from './constants';
 import Data from './data';
 import Human from './animations/human.json';
 import Fish from './animations/fastFish.json';
+import Scuba from './animations/scuba.json';
+import Bag from './animations/bag.json';
+import Bottle from './animations/bottle.json';
 
 export default function HumanFlow() {
   const [started, setStarted] = useState(false);
+
+  const [refScuba, inViewScuba] = useInView();
+  const [refBag, inViewBag] = useInView();
+  const [refBottle, inViewBottle] = useInView();
 
   const variants = {
     visible: { opacity: 1, transition: { duration: 1 } },
@@ -25,7 +33,24 @@ export default function HumanFlow() {
     <div>
       <div className="bg-blue text-dark flex-col justify-center h-screen overflow-y-scroll">
         <div className="flex-col justify-center">
-          {Text.intro.map((text) => <div className="bg-yellow container p-10 my-80 ml-20"><div className="font-sans uppercase text-center text-5xl">{text}</div></div>)}
+          <div className="bg-yellow container p-10 mt-80 ml-20">
+            <div className="font-sans uppercase text-center text-5xl">{Text.intro[0]}</div>
+          </div>
+          <LottieAnimation animationData={Scuba} ref={refScuba} stop={inViewScuba} />
+          <div className="bg-yellow container p-10 ml-20">
+            <div className="font-sans uppercase text-center text-5xl">{Text.intro[1]}</div>
+          </div>
+          <LottieAnimation animationData={Bottle} ref={refBottle} stop={inViewBottle} />
+          <div className="bg-yellow container p-10 ml-20">
+            <div className="font-sans uppercase text-center text-5xl">{Text.intro[2]}</div>
+          </div>
+          <LottieAnimation animationData={Bag} ref={refBag} stop={inViewBag} />
+          <div className="bg-yellow container p-10 ml-20">
+            <div className="font-sans uppercase text-center text-5xl">{Text.intro[3]}</div>
+          </div>
+          <div className="bg-yellow container p-10 my-80 ml-20">
+            <div className="font-sans uppercase text-center text-5xl">{Text.intro[4]}</div>
+          </div>
         </div>
       </div>
       <div className="bg-yellow text-dark h-screen">

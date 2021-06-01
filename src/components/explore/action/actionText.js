@@ -7,7 +7,6 @@ const Text = {
   swaps: '1. Make some simple swaps to limit your disposable plastic use.',
   single: ['Single-use plastics pop up everywhere once you open your eyes and start noticing them. The good news is that there are a lot of simple swaps out there that can help you replace single-use plastics with reusable alternatives.',
     'Start by investing in some reusable bags to take grocery shopping, and build up to reusable on-the-go silverware, travel mugs, and even straws or––hear us out––bamboo toothbrushes.',
-    'Here is a great resource for you to browse alternatives to single-use plastic: https://packagefreeshop.com/',
   ],
   recycle: '2. Recycle responsibly.',
   confusing: ['Recycling can be really confusing, especially because different areas accept different plastics, and it\'s difficult to know if you\'re doing it right. It takes a bit of time and dedication! But we\'re here to help.',
