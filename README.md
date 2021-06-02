@@ -5,7 +5,7 @@ Media project focused on increasing awareness about ocean pollution. The site is
 ### Figma
 Check out the project's Figma [here](https://www.figma.com/file/H9cc0642iE5lUzLiup6LrR/Website?node-id=149%3A192).
 
-Here are som relevant screenshots:
+Here are some relevant screenshots:
 <img width="1440" alt="Screen Shot 2021-06-02 at 12 57 47 AM" src="https://user-images.githubusercontent.com/56173614/120426412-0d180a00-c33e-11eb-8dcc-d3413cf23c11.png">
 <img width="1440" alt="Screen Shot 2021-06-02 at 12 59 10 AM" src="https://user-images.githubusercontent.com/56173614/120426424-11dcbe00-c33e-11eb-9fef-ac98724001d0.png">
 <img width="1440" alt="Screen Shot 2021-06-02 at 12 58 50 AM" src="https://user-images.githubusercontent.com/56173614/120426502-39338b00-c33e-11eb-937f-933081025f65.png">
