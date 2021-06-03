@@ -14,7 +14,7 @@ Here are some relevant screenshots:
 
 
 ### Animations
-We created animations in [Adobe After Effects](https://www.adobe.com/products/aftereffects.html?sdid=KKQOW&kw=semgeneric&mv=search&ef_id=CjwKCAjwtdeFBhBAEiwAKOIy57-l71oNDjKwZOMwbgoWCZ6579dpdp2R2I0eDStaCpWmBQTj7-1k5hoCyroQAvD_BwE:G:s&s_kwcid=AL!3085!3!384483773473!e!!g!!after%20effects&gclid=CjwKCAjwtdeFBhBAEiwAKOIy57-l71oNDjKwZOMwbgoWCZ6579dpdp2R2I0eDStaCpWmBQTj7-1k5hoCyroQAvD_BwE) using custom made SVGs from our [Figma](https://www.figma.com/file/H9cc0642iE5lUzLiup6LrR/Website?node-id=149%3A192). These include several animations of Suzie the Sea Turtle, a human figure consuming a plastic particle, a sequence depciting plastic degradation, and others.
+We created animations in [Adobe After Effects](https://www.adobe.com/products/aftereffects.html?sdid=KKQOW&kw=semgeneric&mv=search&ef_id=CjwKCAjwtdeFBhBAEiwAKOIy57-l71oNDjKwZOMwbgoWCZ6579dpdp2R2I0eDStaCpWmBQTj7-1k5hoCyroQAvD_BwE:G:s&s_kwcid=AL!3085!3!384483773473!e!!g!!after%20effects&gclid=CjwKCAjwtdeFBhBAEiwAKOIy57-l71oNDjKwZOMwbgoWCZ6579dpdp2R2I0eDStaCpWmBQTj7-1k5hoCyroQAvD_BwE) using custom made SVGs from our [Figma](https://www.figma.com/file/H9cc0642iE5lUzLiup6LrR/Website?node-id=149%3A192). These include several animations of Suzie the Sea Turtle, a human figure consuming a plastic particle, a sequence depicting plastic degradation, and others.
 
 ## Architecture
 ### Tech Stack
