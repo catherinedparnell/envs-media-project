@@ -1,9 +1,9 @@
 ![Logo](https://user-images.githubusercontent.com/56173614/120265697-8811ef80-c26e-11eb-9d4f-e129d37d0750.png)
-Media project focused on increasing awareness about ocean pollution. The site is deployed to this [link](https://affectionate-bohr-df8be6.netlify.app/).
+OceanUS is a media project with the purpose of increasing awareness about ocean plastic pollution. By illuminating the impacts of plastic on sea turtles and human health in particular, the site aims to build recognition of ocean plastic pollution as an important environmental problem. The site is deployed to this [link](https://affectionate-bohr-df8be6.netlify.app/).
 
 ## Designs
 ### Figma
-Check out the project's Figma [here](https://www.figma.com/file/H9cc0642iE5lUzLiup6LrR/Website?node-id=149%3A192).
+Designs for the project were created using Figma. This included the stylization of the website's story flows and pages and the creation of custom SVGs to depict animals, people, and other graphics. Check out the project's Figma [here](https://www.figma.com/file/H9cc0642iE5lUzLiup6LrR/Website?node-id=149%3A192).
 
 Here are some relevant screenshots:
 <img width="1440" alt="Screen Shot 2021-06-02 at 12 57 47 AM" src="https://user-images.githubusercontent.com/56173614/120426412-0d180a00-c33e-11eb-8dcc-d3413cf23c11.png">
@@ -14,7 +14,7 @@ Here are some relevant screenshots:
 
 
 ### Animations
-We created animations in [Adobe After Effects](https://www.adobe.com/products/aftereffects.html?sdid=KKQOW&kw=semgeneric&mv=search&ef_id=CjwKCAjwtdeFBhBAEiwAKOIy57-l71oNDjKwZOMwbgoWCZ6579dpdp2R2I0eDStaCpWmBQTj7-1k5hoCyroQAvD_BwE:G:s&s_kwcid=AL!3085!3!384483773473!e!!g!!after%20effects&gclid=CjwKCAjwtdeFBhBAEiwAKOIy57-l71oNDjKwZOMwbgoWCZ6579dpdp2R2I0eDStaCpWmBQTj7-1k5hoCyroQAvD_BwE) using custom made SVGs from our [Figma](https://www.figma.com/file/H9cc0642iE5lUzLiup6LrR/Website?node-id=149%3A192).
+We created animations in [Adobe After Effects](https://www.adobe.com/products/aftereffects.html?sdid=KKQOW&kw=semgeneric&mv=search&ef_id=CjwKCAjwtdeFBhBAEiwAKOIy57-l71oNDjKwZOMwbgoWCZ6579dpdp2R2I0eDStaCpWmBQTj7-1k5hoCyroQAvD_BwE:G:s&s_kwcid=AL!3085!3!384483773473!e!!g!!after%20effects&gclid=CjwKCAjwtdeFBhBAEiwAKOIy57-l71oNDjKwZOMwbgoWCZ6579dpdp2R2I0eDStaCpWmBQTj7-1k5hoCyroQAvD_BwE) using custom made SVGs from our [Figma](https://www.figma.com/file/H9cc0642iE5lUzLiup6LrR/Website?node-id=149%3A192). These include several animations of Suzie the Sea Turtle, a human figure consuming a plastic particle, a sequence depciting plastic degradation, and others.
 
 ## Architecture
 ### Tech Stack
