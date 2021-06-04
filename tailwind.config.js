@@ -9,9 +9,6 @@ module.exports = {
     fontFamily: {
       sans: 'Cabin Condensed',
     },
-    backgroundImage: (theme) => ({
-      'wave-pattern': 'url(\'http://www.newdesignfile.com/postpic/2012/02/cartoon-water-texture_133979.jpg\')',
-    }),
     backgroundColor: (theme) => ({
       ...theme('colors'),
       blue: '#64A8C8',

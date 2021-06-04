@@ -51,7 +51,7 @@ export default function America(props) {
           {textID === -1 ? (
             <div className="absolute right-1/4 flex-col text-center w-1/2 top-40">
               Our
-              <div className="font-sans uppercase text-9xl bg-wave-pattern wave">Oceans</div>
+              <div className="font-sans uppercase text-9xl wave-pattern wave">Oceans</div>
               <div className="text-5xl">Are the</div>
               <motion.div
                 initial="hidden"

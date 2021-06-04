@@ -6,15 +6,13 @@ body {
   font-weight: 400;
 }
 
+
+
 // animations
 .plastic {
     border-radius: 20px;
-    // margin: auto;
     height: .75vh;
     width: .75vh;
-    // background-image: linear-gradient(to bottom, #ff9999, #ff5b5b),
-    //   linear-gradient(to bottom, #e5b1ff, #e5b1ff);
-
     background: #CFE6ED;
     box-sizing: border-box;
 
@@ -26,6 +24,10 @@ body {
 }
 
 // home animations
+.wave-pattern {
+  background-image: url('../images/cartoon-water-texture.jpeg');
+}
+
 .wave{
     background-clip: text;
     -webkit-background-clip: (text);

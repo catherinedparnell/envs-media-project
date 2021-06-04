@@ -4,7 +4,7 @@ const Data = {
   macroplasticData: {
     labels: FuturePlasticData.years,
     datasets: [{
-      label: 'Emissions growth to 2050',
+      label: 'Outputs growth to 2050',
       data: FuturePlasticData.macro_by_2050,
       backgroundColor: [
         '#4AA9CC',
@@ -13,7 +13,7 @@ const Data = {
       borderWidth: 0,
       hoverOffset: 4,
     }, {
-      label: 'Emissions level to 2020',
+      label: 'Outputs level to 2020',
       data: FuturePlasticData.macro_level_by_2020,
       backgroundColor: [
         '#F25F5C',
@@ -22,7 +22,7 @@ const Data = {
       borderWidth: 0,
       hoverOffset: 4,
     }, {
-      label: 'Emissions stop in 2020',
+      label: 'Outputs stop in 2020',
       data: FuturePlasticData.macro_stop_by_2020,
       backgroundColor: [
         '#9BBD51',
@@ -35,7 +35,7 @@ const Data = {
   microplasticData: {
     labels: FuturePlasticData.years,
     datasets: [{
-      label: 'Emissions growth to 250',
+      label: 'Outputs growth to 250',
       data: FuturePlasticData.micro_by_2050,
       backgroundColor: [
         '#4AA9CC',
@@ -44,7 +44,7 @@ const Data = {
       borderWidth: 0,
       hoverOffset: 4,
     }, {
-      label: 'Emissions level to 2020',
+      label: 'Outputs level to 2020',
       data: FuturePlasticData.micro_level_by_2020,
       backgroundColor: [
         '#F25F5C',
@@ -53,7 +53,7 @@ const Data = {
       borderWidth: 0,
       hoverOffset: 4,
     }, {
-      label: 'Emissions stop in 2020',
+      label: 'Outputs stop in 2020',
       data: FuturePlasticData.micro_stop_by_2020,
       backgroundColor: [
         '#9BBD51',
