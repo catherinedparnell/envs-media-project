@@ -10,7 +10,7 @@ import Suzie from './animations/suziePlastic.json';
 import SuzieSwim from './animations/suzieSwim.json';
 import SuzieFloats from './animations/suzieFloats.json';
 import SuzieDiagonal from './animations/suzieDiagonal.json';
-import BabyTurtles from './animations/babyTurtle.json';
+import Seaweed from './animations/seaweed.json';
 
 import Text from './constants';
 import Vector from '../../lib/vectors';
@@ -99,12 +99,9 @@ export default function EcologicalFlow() {
           <div className="bg-yellow container absolute left-10 top-1/5 p-8 z-50 m-5 w-1/4 text-center">
             <div className="font-sans uppercase text-3xl">{Text.hatchlings}</div>
           </div>
-          <div className="absolute left-1/2"><LottieAnimation animationData={BabyTurtles} /></div>
-          <div className="absolute left-1/4 top-40"><LottieAnimation animationData={BabyTurtles} /></div>
-          <div className="absolute left-3/4"><LottieAnimation animationData={BabyTurtles} /></div>
-          <div className="absolute right-1/2 bottom-10"><LottieAnimation animationData={BabyTurtles} /></div>
-          <div className="absolute right-3/4 bottom-0"><LottieAnimation animationData={BabyTurtles} /></div>
-          <LottieAnimation animationData={BabyTurtles} />
+          <div className="w-screen">
+            <LottieAnimation animationData={Seaweed} />
+          </div>
           <div className="bg-yellow container absolute right-10 bottom-0 p-8 z-50 m-5 w-1/4 text-center">
             <div className="font-sans uppercase text-3xl">{Text.baby}</div>
           </div>
