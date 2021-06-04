@@ -1,5 +1,5 @@
 ![Logo](https://user-images.githubusercontent.com/56173614/120265697-8811ef80-c26e-11eb-9d4f-e129d37d0750.png)
-OceanUS is a media project with the purpose of increasing awareness about ocean plastic pollution. By illuminating the impacts of plastic on sea turtles and human health in particular, the site aims to build recognition of ocean plastic pollution as an important environmental problem. Check it out at https://oceanus.netlify.app/
+OceanUS is a media project with the purpose of increasing awareness about ocean plastic pollution. By illuminating the impacts of plastic on sea turtles and human health in particular, the site aims to build recognition of ocean plastic pollution as an important environmental problem. Check it out at http://www.oceanusamerica.us/!
 
 ## Designs
 ### Figma
@@ -19,6 +19,7 @@ We created animations in [Adobe After Effects](https://www.adobe.com/products/af
 ## Architecture
 ### Tech Stack
 * [React](https://reactjs.org/) javascript framework
+* Hosted with [Netlify](https://www.netlify.com/)
 
 ### Notable Libraries
 * [Tailwind CSS](https://tailwindcss.com/) for CSS simplicity
