@@ -1,5 +1,5 @@
 ![Logo](https://user-images.githubusercontent.com/56173614/120265697-8811ef80-c26e-11eb-9d4f-e129d37d0750.png)
-OceanUS is a media project with the purpose of increasing awareness about ocean plastic pollution. By illuminating the impacts of plastic on sea turtles and human health in particular, the site aims to build recognition of ocean plastic pollution as an important environmental problem. The site is deployed to this [link](https://affectionate-bohr-df8be6.netlify.app/).
+OceanUS is a media project with the purpose of increasing awareness about ocean plastic pollution. By illuminating the impacts of plastic on sea turtles and human health in particular, the site aims to build recognition of ocean plastic pollution as an important environmental problem. Check it out at https://oceanus.netlify.app/
 
 ## Designs
 ### Figma
