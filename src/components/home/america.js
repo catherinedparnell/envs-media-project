@@ -97,10 +97,12 @@ export default function America(props) {
         animate="visible"
         variants={variants}
       >
-        <div className="container flex h-10 w-44 justify-evenly bg-offwhite text-dark uppercase text-xs absolute top-0 right-0 m-5 px-3 py-1 text-right">
-          <VectorLogo name="dark-logo" className="h-full w-full" />
-          <NavLink to="/explore">Skip the story</NavLink>
-        </div>
+        <NavLink to="/explore">
+          <div className="container flex h-10 w-44 justify-evenly bg-offwhite text-dark uppercase text-xs absolute top-0 right-0 m-5 px-3 py-1 text-right">
+            <VectorLogo name="dark-logo" className="h-full w-full" />
+            <div>Skip the story</div>
+          </div>
+        </NavLink>
       </motion.div>
     </div>
   );

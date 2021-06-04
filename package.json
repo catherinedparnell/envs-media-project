@@ -7,7 +7,7 @@
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server",
     "test": "eslint src/**.js",
-    "build": "yarn clean; NODE_ENV=production webpack --colors",
+    "build": "yarn clean; NODE_ENV=production webpack --colors; cp src/_redirects dist/_redirects",
     "clean": "rimraf dist",
     "deploy": "yarn build; surge -p dist -d oceanus.surge.sh; yarn clean"
   },

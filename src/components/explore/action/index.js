@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '../navBar';
 
 import Text from './actionText';
+import RecycleGuide from '../../../../images/recycleguide.png';
 
 export default function Action() {
   return (
@@ -18,7 +19,7 @@ export default function Action() {
           <div className="pt-5">{Text.single.map((t) => <div className="ml-10">{t}</div>)}</div>
           <div className="pt-10 font-bold text-3xl">{Text.recycle}</div>
           <div className="pt-5">{Text.confusing.map((t) => <div className="ml-10">{t}</div>)}</div>
-          <img src="images/recycleguide.png" alt="table" className="mt-10 w-2/5 self-center" />
+          <img src={RecycleGuide} alt="table" className="mt-10 w-2/5 self-center" />
           <div className="pt-10 ml-10">{Text.remember}</div>
           <div className="pt-10 font-bold text-3xl">{Text.water}</div>
           <div className="pt-5"><div className="ml-10">{Text.ditch}</div></div>
