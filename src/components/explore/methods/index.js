@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import NavBar from '../navBar';
 
@@ -13,6 +14,7 @@ export default function Methods() {
         <div className="py-5 bg-dark text-offwhite">
           <div className="text-center font-bold text-4xl">Methodology</div>
         </div>
+        <div className="pt-5 pl-5">All data was gotten from Our World in Data: Plastic Pollution. We saved and pulled in csv data from their visualizations into three different Python scripts. The data from these Python scripts were then cleaned, manipulated and written into a JavaScript-readable JSON format with correct attributes to match the visualizations we wanted to portray. To put the visualizations into JavaScript we used React Chart.js, which we loaded the JSON data into and tweaked for styling purposes.</div>
         <div className="mt-10 py-5 bg-dark text-offwhite">
           <div className="text-center font-bold text-4xl">Sources</div>
         </div>
