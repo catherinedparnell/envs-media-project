@@ -1,6 +1,8 @@
 ![Logo](https://user-images.githubusercontent.com/56173614/120265697-8811ef80-c26e-11eb-9d4f-e129d37d0750.png)
 OceanUS is a media project with the purpose of increasing awareness about ocean plastic pollution. By illuminating the impacts of plastic on sea turtles and human health in particular, the site aims to build recognition of ocean plastic pollution as an important environmental problem. Check it out at http://www.oceanusamerica.us/ or deployed at our netlify link [here](https://oceanus.netlify.app/).
 
+*Note: This site is not yet responsive to all screen sizes, as it is currently optimized for the size of a standard MacBook Pro. Larger or smaller screen sizes may distort the sizing/positioning of some of our svgs*
+
 ## Designs
 ### Figma
 Designs for the project were created using Figma. This included the stylization of the website's story flows and pages and the creation of custom SVGs to depict animals, people, and other graphics. Check out the project's Figma [here](https://www.figma.com/file/H9cc0642iE5lUzLiup6LrR/Website?node-id=149%3A192).
